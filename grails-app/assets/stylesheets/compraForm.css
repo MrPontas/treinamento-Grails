@@ -1,0 +1,16 @@
+.divClienteData {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.divData {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.select-div {
+    display: flex;
+    flex-direction: row;
+}

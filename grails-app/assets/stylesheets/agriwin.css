@@ -1,0 +1,1020 @@
+/*
+ * It is advised not to edit the smartadmin_production.css
+ * as this will override any changes you make in the 
+ * later versions of this theme. 
+ * 
+ * We advise that you use use this CSS to override 
+ * SmartAdmin styles. 
+ * 
+ * Rename the stylesheet to whatever your liking so it will stay
+ * unique to you with each update of SmartAdmin.
+ */
+
+/*
+ * INDEX
+ * 
+ * - HTML
+ * - BODY
+ * - CUSTOM STYLES
+ */
+input:not([type='password']):not(.select2-search__field), select:not([multiple]), textarea {
+    text-transform: uppercase;
+}
+label.required, .smart-form label.required {
+    font-weight: bold;
+}
+.errors-form{
+    margin-bottom: 10px;
+}
+/*
+ * CORREÇÃO TEMA 7
+ */
+body.smart-style-6 #logo-group>span#logo:before {
+    content: "";
+}
+body.smart-style-6 #logo img {
+    display: block;
+}
+body.smart-style-6 .ui-spinner-input.spinner-left {
+    padding-left: 24px !important;
+}
+.form-actions {
+    margin-top: 0px;
+    text-align: left;
+    padding: 7px 14px 15px;
+}
+.form-actions .btn{
+    height: 31px;
+    margin: 10px 0 0 5px;
+    padding: 0 22px;
+    font: 300 15px/29px 'Open Sans',Helvetica,Arial,sans-serif;
+    cursor: pointer;
+}
+.dataTables_wrapper .dataTables_processing {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    z-index: 9999;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.2em;
+    background-color: white;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(25%, rgba(255, 255, 255, 0.9)), color-stop(75%, rgba(255, 255, 255, 0.9)), color-stop(100%, rgba(255, 255, 255, 0)));
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+}
+.update-div {
+    position: relative;
+}
+.bloqueio-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    z-index: 9999;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.2em;
+    background-color: white;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    -moz-opacity:0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+}
+.centerprocessando{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+}
+.dialog-combocraw{
+    padding: 0px !important;
+}
+#tituloPagina{
+    display: none;
+}
+.margin-top-10{
+    margin-top: 10px;
+}
+.form-group .onoffswitch{
+    margin-left: 0;
+    display: block;
+}
+select.aw-select-main{
+    display: none;
+}
+.aw-select-main ~ .input-group-btn{
+    width: auto;   
+}
+.aw-select-main ~ .input-group-btn button{
+    padding: 2px 4px;
+    border: 0px;
+    background: transparent;
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+input.aw-select-main{
+    border: 0px;
+    background: transparent;
+    font-weight: 700;
+    width: 85px !important;
+    text-transform: none;
+}
+.smart-style-3 input.aw-select-main{
+    border: 0px;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    color: #fff;
+}
+
+.hoverdiv{
+    padding-top: 5px;
+    border-top: 1px solid rgba(0,0,0,.2);
+    border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+.hoverdiv:hover{
+    -webkit-box-shadow: -2px 0 0 #57889c;
+    -moz-box-shadow: -2px 0 0 #57889c;
+    box-shadow: -2px 0 0 #57889c;
+    border-top-width: 1px!important;
+    border-left: none!important;
+}
+.ui-autocomplete {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: default;
+    width: auto;
+    list-style: none;
+}
+.ui-autocomplete li:hover{
+    background-color: #4f99c6;
+}
+.control-label.label{
+    margin-bottom: 5px;
+}
+.smart-style-0 .smart-form input[type="text"][disabled], .smart-style-1 .smart-form input[type="text"][disabled], .smart-style-2 .smart-form input[type="text"][disabled], .smart-style-3 .smart-form input[type="text"][disabled], .smart-style-4 .smart-form input[type="text"][disabled]{
+    border: 1px solid #ccc;
+    background-color: #eee;
+    opacity: 1;
+}
+table .ui-autocomplete-loading{
+    padding-right:12px !important;
+}
+.table-nitens>tbody>tr>td:not(:first-child), .table-nitens>tfoot>tr>td:not(:first-child){
+    padding:6px;
+}
+.table-xs-agriwin>tbody>tr>td{
+    font-size: 11px !important;
+    padding: 5px !important;
+}
+.table-xs-agriwin>thead>tr>th{
+    padding-left: 5px !important;
+}
+h6.titleItens {
+    margin-top:0px;
+    margin-bottom:5px;
+}
+.bootstrap-duallistbox-container .btn-group .btn:last-child{
+	margin-left:0px;
+}
+.ui-datepicker{ 
+    z-index:1051 !important;
+}
+
+.bootstrap-duallistbox-container label{
+    margin: 0px;
+    padding: 5px 0;
+}
+.legend-form {
+    display: block;
+    border-bottom: 1px dashed rgba(0,0,0,.2);
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0px;
+    padding: 5px 0;
+}
+.datapickerNormalCRAW select[id$="_day"], .datapickerNormalCRAW select[id$="_month"], .datapickerNormalCRAW select[id$="_year"] {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#textoBloqueio{
+    z-index: 1501; 
+    position: absolute; 
+    margin: 0px; 
+    top:50%; 
+    left: 50%; 
+    width: 200px; 
+    height: 70px; 
+    margin-top:-35px; 
+    margin-left:-100px;
+    cursor: wait;
+    text-align: center; 
+/*    background-color:transparent; */
+    padding: 10px 0;
+/*    color:#404040 !important;*/
+}
+.divBloqueioCadastros{
+    z-index: 1500;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    cursor: wait;
+    background-color: white;
+}
+
+
+.containerEdit {
+    position:absolute;
+    z-index:100;
+    width: 100%;
+    height: 100%;
+    
+}
+.containerEdit:hover, .containerEdit.containerEdit-all {
+    background-color: white;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    -moz-opacity:0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+    border: 2px #ccc;
+    border-style: dashed;
+}
+
+.containerEdit .containerMessage {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.containerEdit:hover .containerMessage,.containerEdit.containerEdit-all .containerMessage{
+    display: inherit;
+}
+
+.ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content.ui-corner-all{
+    z-index: 10000 !important;
+}
+
+.table.table-extrato tr td{
+    padding: 8px 10px !important;
+}
+
+.table-forum.table-extrato thead tr th {
+    font-size: inherit;
+}
+
+.pontosComplete .text-overflow-dynamic-container {
+    position: relative;
+    max-width: 100%;
+    padding: 0 !important;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    vertical-align: text-bottom !important;
+}
+.pontosComplete .text-overflow-dynamic-ellipsis {
+    position: absolute;
+    white-space: nowrap;
+    overflow-y: visible;
+    overflow-x: hidden;
+
+    max-width: 100%;
+    min-width: 0;
+    width:100%;
+    top: 0;
+    left: 0;
+}
+.pontosComplete .text-overflow-dynamic-container:after,
+.pontosComplete .text-overflow-dynamic-ellipsis:after {
+    content: '-';
+    display: inline;
+    visibility: hidden;
+    width: 0;
+}
+.comboboxListAutocomplete, .comboCRAW-xs{
+    width: 100% !important;
+    min-width: 90px;
+    border: 1px solid #ccc;
+}
+.comboEditDtList, .divComboCRAW-xs{
+    position: relative;
+}
+.form-inline .comboEditDtList .input-group, .form-inline .divComboCRAW-xs .input-group{
+    width: 100% !important;
+}
+.form-inline .comboEditDtList .input-group .input-group-btn, .form-inline .divComboCRAW-xs .input-group .input-group-btn{
+    width: 1px !important;
+}
+.comboEditDtList button[id$="buttonAll"], .divComboCRAW-xs button[id$="buttonAll"]{
+    padding: 2px 6px;
+}
+.btnTrocarAtividade-antigo{
+    padding: 0px;
+}
+.btn-atividade-antigo{
+    border-radius: 50%;
+    border: 3px solid #cfcfcf;
+    border-width: 0 3px 0 1px;
+    height: 80%;
+    margin-top: 5px;
+    margin-left: 10px;
+    padding: 0 5px !important;
+   
+    background-color: #FFFFFF;
+}
+.btn-categoriaConta{
+    color: #000 !important;
+    font-size: 12px;
+}
+.icon-white .btn-categoriaConta i{
+    color: #FFF;
+}
+.nivel {
+    padding: 1px 7px 1px;
+    display: block;
+    margin: 0;
+    cursor: pointer;
+    min-height: 1em;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.nivel-1 {
+    font-weight: bold;
+}
+.nivel-2 {
+    margin-left: 20px;
+    font-weight: bold;
+}
+.nivel-3 {
+    margin-left: 40px;
+}
+.nivel-4 {
+    margin-left: 60px;
+}
+.select2-results__option{
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.smart-style-5 .select2-selection--multiple{
+    background-color: rgba(255,255,255,.2);
+}
+.select2-selection__choice{
+    background-color: #eee;
+    border-color: #ccc;
+    color: initial;
+}
+input.knob{
+    border-bottom: 1px solid !important;
+}
+.select2-container--disabled .select2-selection__choice__remove{
+    display: none;
+}
+.btn-atividade {
+    display: inline-block;
+    font-weight: 700;
+    height: 100%;
+    line-height: 24px;
+    min-width: 30px;
+    padding: 2px 10px;
+    text-align: center;
+    text-decoration: none!important;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    border: none;
+    font-size: 17px;
+}
+
+.smart-style-0 .corBotao{
+    background-color: transparent !important;
+}
+.smart-style-0 .filter-botao{
+    filter: invert(42%) sepia(7%) saturate(156%) hue-rotate(328deg) brightness(96%) contrast(89%);
+}
+.smart-style-0 .corBotao:hover .filter-botao{
+    filter: invert(0%) sepia(92%) saturate(11%) hue-rotate(107deg) brightness(101%) contrast(100%);
+}
+.smart-style-0 .corBotao-ativo{
+    box-shadow: 0px -5px 5px 0px #000; 
+    background-color: #474544 !important;
+}
+.smart-style-0 .filter-botao-ativo{
+    filter: invert(99%) sepia(100%) saturate(2%) hue-rotate(321deg) brightness(105%) contrast(100%);
+}
+
+.smart-style-2 .corBotao{
+    background-color: transparent !important;
+}
+.smart-style-2 .filter-botao{
+    filter: invert(90%) sepia(8%) saturate(93%) hue-rotate(191deg) brightness(88%) contrast(91%);
+}
+.smart-style-2 .corBotao:hover .filter-botao{
+    filter: invert(95%) sepia(100%) saturate(20%) hue-rotate(317deg) brightness(106%) contrast(106%);
+}
+.smart-style-2 .corBotao-ativo{
+    box-shadow: 0px -5px 5px 0px #fff; 
+    background-color: #fff !important;
+}
+
+.smart-style-1 .corBotao{
+    background-color: transparent !important;
+}
+.smart-style-1 .filter-botao{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(275deg) brightness(102%) contrast(102%);
+}
+.smart-style-1 .corBotao:hover .filter-botao{
+    filter: invert(73%) sepia(56%) saturate(0%) hue-rotate(166deg) brightness(102%) contrast(114%);
+}
+.smart-style-1 .corBotao-ativo{
+    box-shadow: 0px -5px 5px 0px #e6e6e6; 
+    background-color: #e6e6e6 !important;
+}
+
+.smart-style-3 .corBotao{
+    background-color: transparent !important;
+}
+.smart-style-3 .filter-botao{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(275deg) brightness(102%) contrast(102%);
+}
+.smart-style-3 .corBotao-ativo{
+    box-shadow: 0px -5px 5px 0px #fff; 
+    background-color: #fff !important;
+}
+.smart-style-3 .filter-botao-ativo{
+    filter: invert(49%) sepia(47%) saturate(386%) hue-rotate(152deg) brightness(93%) contrast(97%);
+}
+
+.smart-style-4 .corBotao{
+    background-color: transparent !important;
+}
+.smart-style-4 .filter-botao{
+    filter: invert(47%) sepia(0%) saturate(1046%) hue-rotate(189deg) brightness(89%) contrast(95%);
+}
+.smart-style-4 .corBotao:hover .filter-botao{
+    filter: invert(0%) sepia(92%) saturate(11%) hue-rotate(107deg) brightness(101%) contrast(100%);
+}
+.smart-style-4 .corBotao-ativo{
+    box-shadow: 0px -5px 5px 0px #3a3f51; 
+    background-color: #3a3f51 !important;
+}
+.smart-style-4 .filter-botao-ativo{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(275deg) brightness(102%) contrast(102%);
+}
+
+.smart-style-5 .corBotao{
+    background-color: transparent;
+}
+.smart-style-5 .filter-botao{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(275deg) brightness(102%) contrast(102%);
+}
+.smart-style-5 .corBotao:hover .filter-botao{
+    filter: invert(84%) sepia(42%) saturate(2424%) hue-rotate(358deg) brightness(103%) contrast(105%)
+}
+.smart-style-5 .corBotao-ativo{
+    box-shadow: 0px -5px 5px 0px #fff;
+    background-color: #fff;
+}
+
+.smart-style-6 #ribbon, .smart-style-5 #ribbon{
+    background-color: #fff !important;
+}
+.smart-style-6 .corBotao{
+    background-color: transparent !important;
+}
+.smart-style-6 .filter-botao{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(275deg) brightness(102%) contrast(102%);
+}
+.smart-style-6 .corBotao-ativo{
+    box-shadow: 0px -5px 5px 0px #fff;
+    background-color: #fff;
+}
+
+header#header.agriwinHeaderagricola{
+    border-bottom: 2px solid #32CD32 !important;
+}
+header#header.agriwinHeaderpecuaria{
+    border-bottom: 2px solid #1E90FF !important;
+}
+.smart-style-1 header#header.agriwinHeaderagricola #logo-group,
+.smart-style-4 header#header.agriwinHeaderagricola #logo-group {
+    background: inherit !important;
+}
+.smart-style-4 header#header #logo-group {
+    background: #FFF !important;
+}
+
+.smart-style-1 header#header.agriwinHeaderpecuaria #logo-group,
+.smart-style-4 header#header.agriwinHeaderpecuaria #logo-group {
+    background: inherit !important;
+}
+.smart-style-4 header#header #logo-group {
+    background: #FFF !important;
+}
+.smart-style-5 header#header.agriwinHeaderpecuaria{
+    background-color: rgba(0,0,0,.7)!important;
+    background-repeat: repeat-x !important;
+    background-position: bottom !important;
+    background-size: auto 8px !important;
+}
+
+.select2-dropdown{
+    z-index: 900!important;
+}
+
+.rowExpandClick{
+    cursor: pointer;
+}
+.resultExpanded td.resultExpandedColumn{
+    padding-left: 3% !important;
+    
+}
+th.nowrap, td.nowrap{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.daterangepicker .calendar{
+    font-size:9px;
+    
+}
+.daterangepicker .calendar th,
+.daterangepicker .calendar td{
+    min-width: 10px !important;
+    width: 10px;
+}
+.combo-select-inline{
+    border:0px;
+}
+body.smart-style-5 .combo-select-inline{
+    background: rgba(255,255,255,.2);
+}
+.smart-style-5.combo-select-inline{
+    border:0px;
+}
+body.smart-style-6 .daterangepicker.dropdown-menu{
+    -webkit-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+    opacity: 1;
+    display: none;
+}
+body.smart-style-6 .daterangepicker.dropdown-menu .daterangepicker_input .input-mini{
+    padding-left:25px;
+}
+
+body.smart-style-5 .daterangepicker.dropdown-menu .daterangepicker_input .input-mini{
+    color: #fff;
+}
+body.smart-style-5 .daterangepicker .calendar-table, body.smart-style-5 .daterangepicker .calendar-table td.off{
+    background-color: transparent;   
+}
+.craw-combobox .input-group-btn{
+    font-size: inherit;
+}
+.menuExpansivoComLink .badge.pull-right.inbox-badge{
+    margin-left:5px;
+}
+
+body.smart-style-6 .ribbon-button-alignment{
+    display: inline-block !important;
+}   
+
+@media screen and (max-width: 980px){
+    .smart-style-4 #ribbon {
+        left: 0 !important;
+    }
+}
+
+.smart-style-4 #ribbon, .smart-style-4 #smart-fixed-ribbon+span{
+    display: inline-block;
+}
+.smart-style-4 #ribbon{
+    background-color: #3a3f51 !important;
+    top: 49px !important;
+    left: 220px;
+    width: 100%;
+    font-size: 13px !important;
+    z-index: 901 !important;
+    position: fixed !important;
+}
+.smart-style-4 .ribbon-button-alignment{
+    display: inline-block !important;
+}
+.smart-style-4 #content {
+    padding-top: 50px !important;
+}
+
+select.estilo{
+    display: none;
+}
+.estilo ~ .input-group-btn button{
+    padding: 2px 4px;
+    border: 0px;
+    background: transparent;
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+input.estilo{
+    border: 0px;
+    background: transparent;
+    font-weight: normal;
+    width: 100% !important;
+    text-transform: none;
+    color: #3276b1 !important;
+} 
+
+.ellipsis-extrato-conta:before{
+    visibility: hidden;
+}
+.ellipsis-extrato-conta{
+    position: relative;
+}
+.ellipsis-extrato-conta span>span{
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@media screen and (max-width: 1100px){
+    .btn-atividade{
+        display: none !important;
+    }
+    #logout{
+        display:none;
+    }
+    #modalPergunta{
+        width: 100% !important;
+    }
+    #idPerguntas{
+        padding-top: 60px !important;
+        padding-bottom: 15px !important;
+    }
+}
+.modal.right .modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 320px;
+    height: 100%;
+    -webkit-transform: translate3d(0%, 0, 0);
+        -ms-transform: translate3d(0%, 0, 0);
+         -o-transform: translate3d(0%, 0, 0);
+            transform: translate3d(0%, 0, 0);
+}
+.modal.right .modal-content {
+    height: 100%;
+    overflow-y: auto;
+}
+.modal.right .modal-body {
+    padding: 15px 15px 80px;
+}
+.modal.right.fade .modal-dialog {
+    right: -320px;
+    -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+       -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+         -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+            transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+.modal.right.fade.in .modal-dialog {
+    right: 0;
+}
+.modal-content {
+    border-radius: 0;
+    border: none;
+}
+.modal-header {
+    border-bottom-color: #EEEEEE;
+    background-color: #FAFAFA;
+}
+body.smart-style-5 #myModalLabel, #spanPergunta{
+    color:black !important;
+}
+/* Tirar o uppercase do campo de tags */
+.textTransformNone > .bootstrap-tagsinput > input{
+    text-transform: none;
+}
+@media screen and (min-width: 1100px){
+    #divAtividadeMob{
+        display: none;
+    }
+}
+@media screen and (min-width: 921px){
+    #trocaProdMob{
+        display: none;
+    }
+}
+@media screen and (max-width: 920px){
+    #fullscreen,#produtorMod{
+        display: none !important;
+    }
+}
+body.smart-style-6 #divAtividadeMob{
+    background: none !important;
+    height: 45px !important;
+}
+body.smart-style-6 .ativTema7{
+    padding-left: 0 !important;
+    color: black !important;
+}
+body.smart-style-6 .ativTema7 > span{
+    display: inline !important;
+    color: black !important;
+    background: none !important;
+    margin-left: auto !important;
+    padding-left: 6px !important;
+}
+.userdropdown {
+    display: none !important;
+}
+@media only screen and (max-width: 479px) and (min-width: 320px){
+    #logo-group{
+        width: 146px !important;
+    }
+    #safraMob{
+        padding: 0px !important;
+    }
+    #tabelaCorpo > div {
+        width:auto !important;
+    }
+}
+ /* Ajustes botões autocomplete*/
+.craw-combobox .btn-padrao{ /** Padronização dos botões do autocomplete do sistema**/
+    box-shadow: none !important;
+    border-left:0;
+    height:32px;
+    top:0 !important;
+    left:0 !important;
+    background-color:#fff !important;
+    border-color:#ccc !important;
+    padding-left: 7px;
+    padding-right: 5px;
+}
+.craw-combobox .ui-autocomplete-input:focus ~ span>.btn-padrao{ /** Borda azul para foco do botão do autocomplete seguindo o input do mesmo**/
+    border-color:#66afe9 !important;
+}
+body.smart-style-3 .craw-combobox .btn-padrao{ /** ajuste botao para o tema 4**/
+    border-top-color: #a3a3a3 !important;
+    border-bottom-color: #ccc !important;
+    border-right-color: #ccc !important;
+}
+body.smart-style-3 .craw-combobox .ui-autocomplete-input:focus ~ span>.btn-padrao{ /** ajuste botao para o tema 4 (foco)**/
+    border-top-color: #a3a3a3 !important;
+    border-bottom-color: #ccc !important;
+    border-right-color: #ccc !important;
+}
+body.smart-style-5 .btn-padrao{ /** ajuste botao para tema 6**/
+    background: rgba(255,255,255,.2) !important;
+    border-color: rgba(255,255,255,.4) !important;
+}
+.craw-combobox .project-selector{ /** Ajuste autocomplete produtor e safra**/
+    top: -5px !important;
+    background-color: transparent !important;
+}
+ /* Ajustes tema 6 */
+body.smart-style-5 .craw-combobox .project-selector{ /**produtor e safra**/
+    background: transparent !important;
+}
+body.smart-style-5 .craw-combobox input.form-control:not(.comboboxautocomplete-datatable), body.smart-style-5 .craw-combobox a.btn-padrao{ /** campo de texto com excessão do autocomplete Safra nas listagens e botões: ver mais e cadastrar**/
+    border-right: 0;
+}
+body.smart-style-5 .craw-combobox span.input-group-btn:last-child>.btn{
+    margin-left: 0 !important;
+}
+body.smart-style-5 .select2-selection{
+    color: #fff;
+    background: rgba(255,255,255,.2);
+}
+body.smart-style-6 .craw-combobox .btn-padrao{  /** Ajuste botão tema 7**/
+    border-top:none !important;
+    border-right: none !important;
+}
+.comboboxautocomplete:not(.comboboxautocomplete[sembotao=true]) ~ .craw-combobox .form-control:focus, .comboboxautocomplete-datatable:not(.comboboxautocomplete-datatable[sembotao=true]) ~ .craw-combobox .form-control:focus, .comboboxListAutocomplete:not(.comboboxListAutocomplete[sembotao=true]) ~ .craw-combobox .form-control:focus { /** Ajuste borda durante foco autocomplete com excessão dos autocomplete sem botao**/
+    border-right: white;
+}
+ /** Ajuste botão autocomplete desabilitado (normal, tema 5,6)**/
+.craw-combobox .ui-autocomplete-input[disabled] ~ span>.btn-padrao:not(.project-selector){
+    background-color: #eee !important;
+    opacity: 1;
+}
+body.smart-style-6 .craw-combobox .ui-autocomplete-input[disabled] ~ span>.btn-padrao{
+    background: 0 0 !important;
+    border-bottom: 1px dashed #E0E0E0 !important;
+    opacity: 1;
+}
+body.smart-style-5 .craw-combobox .ui-autocomplete-input[disabled] ~ span>.btn-padrao{
+    background: rgba(255,255,255,.2) !important;
+    opacity: 1;
+}
+.has-error .craw-combobox .ui-autocomplete-input[type=text] ~ span>.btn-padrao{ /*borda vermelha pro botão no caso de erro no registro*/
+    border-color: #b94a48 !important;
+}
+ /** Configurações da seta padrão do sistema para o autocomplete**/
+.craw-combobox .select-seta{
+    width: 15px;
+    height: 9px;
+    display:block;
+    margin-top: 2px;
+    margin-right:-3px;
+    background-image: url("../img/setaBaixoPadraoPreto.png") !important;    
+    background-repeat: no-repeat !important;
+    background-size: 13px 8px !important;
+}
+/** Configurações da seta nos selects padrões do navegador**/
+select, .select2-selection{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("../img/setaBaixoPadraoPreto.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: calc(100% + -4px) center !important;
+    padding-right: 25px !important;
+    background-size: 13px 8px !important;
+    cursor: pointer
+}
+/** Ajustes para seta branca em alguns locais nos temas 2,3,6,7**/
+body.smart-style-1 .craw-combobox .project-selector .select-seta,body.smart-style-2 .craw-combobox .project-selector .select-seta, body.smart-style-5 .craw-combobox .select-seta, body.smart-style-6 .craw-combobox .project-selector .select-seta,body.smart-style-5 select, body.smart-style-5 .select2-selection{
+   background-image: url("../img/setaBaixoPadraoBranco.png") !important;
+}
+body.smart-style-6 .select2-selection{ /* Igualando os selects multiplos e os igual categoria de conta ao restante do tema 7 */
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+}
+.select2-selection__arrow{ /** Retira seta antiga dos selects igual categoria de conta**/
+    display:none;
+}
+ /** Retira seta padrão dos selects do navegador no IE **/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    select, .select2-selection{
+        background: transparent !important;
+        padding-right: 0px !important;
+    }
+ }
+  /** Ajuste input "registros por página" nas listagens**/
+ .dataTables_length .input-sm{
+    line-height: 1 !important;
+ }
+ /** Ajuste de cores das letras nos selects igual categoria de conta**/
+body.smart-style-5 .select2-container .txt-color-red {
+    color: #a90329!important;
+}
+body.smart-style-5 .select2-container .txt-color-green {
+    color: #356e35!important;
+}
+.craw-combobox .comboboxListAutocomplete ~ span .btn-padrao{ /*ajuste para autocomplete na tabela das listagens*/
+    height: 24px;
+}
+
+/* -------------- Gráficos tela inicial ---------------- */
+
+.divFundo.divFundoConfWidget{
+    cursor: pointer;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+    margin: 10px;
+    /*background-color:rgb(241,244,249);*/
+    background-color:rgba(7,35,58,0.9);
+}
+
+.divFundo .container {
+    position: relative;
+    width: 100%;
+    padding-left: 20px;
+    padding-top:15px;
+    padding-right: 20px;
+}
+
+.divFundo.divFundoConfWidget .container:hover .overlay {
+    opacity: 0.65;
+}
+
+.divFundo:not(.divFundoConfWidget) .container:hover .overlay {
+    opacity: 0.85;
+}
+
+.divFundo .container .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .7s ease;
+}
+
+.divFundo.divFundoConfWidget .container .overlay {
+    background-color: black;
+}
+
+body.smart-style-5 .divFundo:not(.divFundoConfWidget) .container .overlay {
+    background-color: rgba(2, 2, 46, 0.582);
+}
+
+.divFundo:not(.divFundoConfWidget) .container .overlay {
+    background-color: white;
+}
+
+.divFundo .container .shadowImg{
+    box-shadow: 6px 11px 10px gray;
+}
+
+.divFundo .container .overlay .textTituloWidget {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.divTextoLegenda{
+    font-weight: 400
+}
+
+@media screen and (min-width: 1224px){
+    .minHeightGraficos{
+        min-height: 250px !important;
+    }
+}
+#dropProdMenu{
+    position:fixed;
+    top: 8vh;
+    left: 0.2em;
+    width: 97vw;
+    height: 17vh;
+    overflow-x: hidden;
+    padding-top: 0;
+}
+#dropProdMenu .craw-combobox{
+    width:100%;
+    padding-left: 13px;
+}
+#dropProdMenu .craw-combobox input{
+    width:100% !important;
+}
+#dropProdMenu .craw-combobox .input-group-btn{
+    width:5% !important;
+}
+
+/* -------------- Fim Gráficos tela inicial ---------------- */

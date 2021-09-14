@@ -1,0 +1,52 @@
+
+
+.table > tbody tr td {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    
+}
+
+a:hover {
+    color: rgb(242, 66, 54);
+}
+
+.my-table-with-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.divValorTotal {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.botaoRemover {
+    border: 0;
+    background-color: transparent;
+
+}
+.botaoRemover > svg {
+    color: #DC3545;
+    margin-left: 20px;
+}
+.botaoRemover:hover > svg {
+    color: #b32a38;
+}
+
+.botaoRemover:focus {
+    box-shadow: none;
+    outline: 0;
+}
+/* 
+.actionColumn {
+    display: flex;
+    place-content: center;
+
+    width: 60px;
+} */
+

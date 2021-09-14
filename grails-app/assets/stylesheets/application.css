@@ -1,0 +1,114 @@
+/*
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS file within this directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the top of the
+* compiled file, but it's generally better to create a new file per style scope.
+*
+*= require bootstrap
+*= require grails
+*= require main
+*= require mobile
+*= require_self
+*/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+  }
+  body { 
+    /* background: rgb(203, 191, 187); */
+    background: #F8F0FB;
+    color: rgb(73, 56, 67);
+  }
+  border-style, input, button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+  }
+  h1, h2, h3, h4, h5, h6, strong, a {
+    color: rgb(73, 56, 67);
+    font-weight: 500;
+  }
+  button{
+    cursor: pointer;
+  }
+
+  header {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+
+    padding-left: 80px;
+    max-height: 70px;
+    height: 100%;
+    background-color: #007Bff;
+    color: rgb(203, 191, 187);
+
+    }
+
+  header > a {
+
+    text-decoration: none;
+    color: rgb(203, 191, 187);
+
+    margin: 8px;
+    padding: 10px 25px;
+
+    background-color: #007Bff;
+    border: rgb(203, 191, 187) 2px solid;
+    border-radius: 7px;
+
+    transition: color 0.2s, border 0.2s;
+
+    font-size: 18px;
+    font-weight: 700;
+
+
+  }
+
+  header > a:hover{
+    color: rgb(243, 235, 232);
+    border: rgb(243, 235, 232) 2px solid;
+  }
+
+  .menuSelecionado {
+    pointer-events: none;
+    box-shadow: none;
+    outline: 0;
+  }
+
+  header > a:focus, a.menuSelecionado{
+    background-color: #FFF;
+    border: #FFF 2px solid;
+    color:#4986cc;
+    box-shadow: none;
+    outline: 0;
+  }
+
+  .divExit {
+    display: flex;
+    width: 100%;
+  }
+  .divExit > a {
+    display: flex;
+    align-items: center;
+    font-size: medium;
+
+    margin-left: auto;
+    margin-right: 30px;
+    color: rgb(243, 235, 232);
+    text-decoration: none;
+
+  }
+  .divExit > a:hover{
+    color: rgb(233, 216, 211);
+  }
+
+  .svgExit {
+    margin-right: 5px;
+  }

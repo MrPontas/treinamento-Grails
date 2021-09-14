@@ -1,0 +1,28 @@
+
+.formUsuario {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.formUsuario > label {
+    margin-top: 15px;
+}
+
+.formUsuario > button {
+    max-width: 120px;
+    width: 100%;
+
+    margin-top: 30px;
+    margin-left: 155px;
+}
+
+.divSenhaEdit {
+    width: 380px;
+    display: flex;
+}
+
+.senhaLabel {
+    display: flex;
+    place-content: flex-end;
+}

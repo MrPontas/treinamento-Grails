@@ -1,0 +1,6 @@
+#Thu, 09 Sep 2021 15:09:13 -0300
+
+info.app.version=0.1
+info.app.name=teste
+grails.env=development
+info.app.grailsVersion=3.3.11
